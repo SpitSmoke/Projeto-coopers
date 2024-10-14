@@ -1,10 +1,10 @@
 import HeroButton from '../../Components/HeroButton'
 import HeroTop from '../../Containers/HeroTop'
-import HeroTemplate, { BackGroundImage, LogoImage } from './heroStyles'
+import HeroTemplate, { ArrowIcon, LogoImage } from './heroStyles'
 import HeroContent from '../../Containers/HeroContent'
 
-import BG from '../../Images/ImagesTodoList/BG.svg'
 import Logo from '../../Images/ImagesTodoList/Logo.svg'
+import Arrow from '../../Images/ImagesTodoList/icon-scroll.svg'
 
 const Hero = () => (
   <HeroTemplate>
@@ -13,7 +13,7 @@ const Hero = () => (
       <HeroButton />
     </HeroTop>
     <HeroContent />
-    {/* <BackGroundImage src={BG} /> */}
+    <ArrowIcon src={Arrow} />
   </HeroTemplate>
 )
 export default Hero

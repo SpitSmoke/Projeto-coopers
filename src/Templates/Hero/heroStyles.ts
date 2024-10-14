@@ -4,8 +4,10 @@ const HeroTemplate = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   max-width: 1440px;
+  height: auto;
   margin: 0 auto;
   padding: 80px;
 
@@ -22,10 +24,10 @@ export const LogoImage = styled.img`
   left: 80px;
 `
 
-export const BackGroundImage = styled.img`
-  width: 640px;
-  height: 734px;
-  top: 24px;
-  left: 806px;
-  margin: 0;
+export const ArrowIcon = styled.img`
+  width: 40px;
+  height: 50px;
+  top: 664px;
+  left: 50%;
+  position: absolute;
 `

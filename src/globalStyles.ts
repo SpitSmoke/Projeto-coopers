@@ -15,10 +15,11 @@ body {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
-}
+@media (max-width: 1360px) {
+    body {
+        font-size: 14px;
+        padding: 15px;
+    }
+
 `
 export default GlobalStyles
