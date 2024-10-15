@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export interface HeroButtonProps {
   fontSize?: string | number
   children?: React.ReactNode
+  onClick?: () => void
 }
 
 const Button = styled.button<HeroButtonProps>`
