@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 body {
   width: 100%;
   max-width: 1440px;
-  height: auto;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
