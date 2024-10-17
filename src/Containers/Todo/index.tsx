@@ -16,10 +16,14 @@ const Todo = () => {
     setCompletedTasks([...completedTasks, task])
   }
 
+  const clearTasks = () => {
+    setCompletedTasks([])
+  }
+
   return (
     <ContainerTodo>
       <ListOne onCompleteTask={handleCompleteTask} />
-      <ListTwo completedTasks={completedTasks} />
+      <ListTwo completedTasks={completedTasks} clearTasks={clearTasks} />
     </ContainerTodo>
   )
 }

@@ -1,4 +1,5 @@
 import ListTwoContainer, {
+  ButtonDeletAll,
   FirstLine,
   Green,
   LiDone,
@@ -8,9 +9,11 @@ import ListTwoContainer, {
 } from './ListTwoStyles'
 
 const ListTwo = ({
-  completedTasks
+  completedTasks,
+  clearTasks
 }: {
   completedTasks: { id: number; text: string; completed: boolean }[]
+  clearTasks: () => void
 }) => {
   return (
     <ListTwoContainer>
@@ -24,7 +27,10 @@ const ListTwo = ({
           <LiDone key={task.id}>{task.text}</LiDone>
         ))}
       </UlDone>
+
+      <ButtonDeletAll onClick={clearTasks}>Erase ALL</ButtonDeletAll>
     </ListTwoContainer>
   )
 }
+
 export default ListTwo

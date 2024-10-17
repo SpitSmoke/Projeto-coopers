@@ -58,4 +58,27 @@ export const LiDone = styled.li`
   justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
+  position: relative;
+`
+export const ButtonDeletAll = styled.button`
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.26px;
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  width: 300px;
+  height: 64px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4ac959;
+    outline: none;
+  }
 `
